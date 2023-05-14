@@ -3,6 +3,5 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("This is first project")
-	fmt.Println("This is first project")
+	fmt.Println("Hello 2023")
 }
