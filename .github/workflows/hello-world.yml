@@ -9,6 +9,7 @@ on:
       - 'main' # chay khi co su thay doi o nhanh main
       - 'release/**' # khong chay khi co su thay doi o nhanh realease va tat ca nhanh con
       - '!dev/**' 
+  workflow_dispatch:
 jobs:
   say-hello:
     runs-on: ubuntu-latest
