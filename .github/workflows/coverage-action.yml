@@ -10,6 +10,4 @@ jobs:
   coverage-report:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - run: npm install
       - uses: ncruces/go-coverage-report@v0
