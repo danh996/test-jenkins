@@ -2,7 +2,7 @@ name: coverage
 on:
   push:
     branches: 
-      - 'main'
+      - 'master'
   pull_request:
     types: [opened, reopened, synchronize, labeled, unlabeled]
   workflow_dispatch:
