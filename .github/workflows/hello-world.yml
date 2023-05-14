@@ -1,7 +1,14 @@
 name: hello-world
 on:
   push:
-    branches: [master]
+    paths:
+      - '!README.md' # khong chay khi file readme thay doi
+      - '!docs/**' # khong chay khi toan bo folder docs thay doi, tat ca cac con trong do luon
+      - '**.js' # chay khi co su thay doi o file js o tat ca cac folder
+    branches: 
+      - 'main' # chay khi co su thay doi o nhanh main
+      - 'release/**' # khong chay khi co su thay doi o nhanh realease va tat ca nhanh con
+      - '!dev/**' 
 jobs:
   say-hello:
     runs-on: ubuntu-latest
