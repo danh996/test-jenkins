@@ -16,4 +16,9 @@ jobs:
   run-pr-action:
     runs-on: ubuntu-latest
     steps:
+      - uses: mheap/github-action-required-labels@v4
+        with:
+          mode: exactly
+          count: 0
+          labels: "do not build"
       - run: echo This is has a pull request
