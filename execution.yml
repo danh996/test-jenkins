@@ -22,4 +22,4 @@ scenarios:
       - selectByName(fromPort): "Boston"
       - selectByName(toPort): "Rome"
       - clickByCSS(input.btn.btn-primary)
-      - assertTextByCSS(h3): "Flights from Boston to Rome:"
+      - assertTextByCSS(h3): "Flights from Bostn to Rome:"
